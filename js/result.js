@@ -22,6 +22,9 @@
     return typeId.toLowerCase();
   }
 
+  // 特殊结果的独立效果页
+  const SPLASH_PAGES = { "403": "403.html", "404": "404.html", "DAMN": "null.html" };
+
   // ─── 初始化 ──────────────────────────────────────────────────────────────
   async function init() {
     const resultRaw = sessionStorage.getItem("nbti_result");
@@ -31,6 +34,14 @@
     }
 
     const result = JSON.parse(resultRaw);
+
+    // 特殊类型：跳转独立效果页（仅首次，防死循环）
+    const splashPage = SPLASH_PAGES[result.typeId];
+    if (splashPage && sessionStorage.getItem("nbti_splash_seen") !== "true") {
+      window.location.href = splashPage;
+      return;
+    }
+    sessionStorage.removeItem("nbti_splash_seen");
 
     let typeData     = null;
     let dimConfig    = [];

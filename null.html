@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>null</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #080810;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .terminal-screen {
+    background: #0d0d0d;
+    border-radius: 12px;
+    overflow: hidden;
+    width: min(680px, 92vw);
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.06),
+      0 40px 80px rgba(0,0,0,0.6),
+      0 0 60px rgba(0,0,0,0.4);
+  }
+
+  .terminal-bar {
+    background: #1e1e1e;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .terminal-dots { display: flex; gap: 7px; }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .dot.red    { background: #ff5f57; }
+  .dot.yellow { background: #febc2e; }
+  .dot.green  { background: #28c840; }
+
+  .terminal-title {
+    font-size: 12px;
+    color: rgba(255,255,255,0.25);
+    font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+  }
+
+  .terminal-body {
+    padding: 48px 40px 160px;
+    font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    min-height: 280px;
+  }
+
+  .terminal-prompt {
+    color: #e8e8e8;
+    letter-spacing: 1px;
+  }
+
+  .terminal-cursor {
+    display: inline-block;
+    width: 13px;
+    height: 22px;
+    background: #e8e8e8;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    animation: cursor-blink 1.1s step-start infinite;
+  }
+
+  @keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="terminal-screen">
+    <div class="terminal-bar">
+      <div class="terminal-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <span class="terminal-title">bash — 80×24</span>
+    </div>
+    <div class="terminal-body">
+      <span class="terminal-prompt">&gt; null</span><span class="terminal-cursor"></span>
+    </div>
+  </div>
+  <script>
+    function go() {
+      sessionStorage.setItem('nbti_splash_seen', 'true');
+      window.location.href = 'result.html';
+    }
+    document.addEventListener('click', go);
+    document.addEventListener('touchstart', go);
+  </script>
+</body>
+</html>
