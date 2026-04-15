@@ -1,0 +1,361 @@
+{
+  "questions": [
+    {
+      "order": 1,
+      "id": "CA-01",
+      "text": "一件让你不舒服的事发生后，过了一天，你会：",
+      "type": "direct",
+      "dimension": "CA",
+      "options": [
+        { "id": "A", "text": "豆腐脑是吃咸的还是甜的呢", "score": { "CA": "忽略" } },
+        { "id": "B", "text": "所有人都欺负我，偏偏我最好欺负", "score": { "CA": "积累爆发" } },
+        { "id": "C", "text": "有仇当时就报了，还等什么一天！", "score": { "CA": "直接" } },
+        { "id": "D", "text": "这事咱没完", "score": { "CA": "爪子" } }
+      ]
+    },
+    {
+      "order": 2,
+      "id": "PR-02",
+      "text": "如果你的某个真实想法（如对方案的不满）会令重要的合作者或上司感到不悦，你会：",
+      "type": "scenario",
+      "dimension": "PR",
+      "options": [
+        { "id": "A", "text": "展示一下包装的艺术，我最会说话啦", "score": { "PR": "表演" } },
+        { "id": "B", "text": "世界和平最重要", "score": { "PR": "压抑" } },
+        { "id": "C", "text": "直说", "score": { "PR": "真实" } }
+      ]
+    },
+    {
+      "order": 3,
+      "id": "CA-03",
+      "text": "在经历漫长的工作日回到家后，你迫不及待打开某5v5公平竞技四字游戏，打算在新赛季狠狠上分。预选了裙底风光男子，没想到队友一看到震儿就发了狠忘了情，直接ban掉了你的英雄。此时你会：",
+      "type": "scenario",
+      "dimension": "CA",
+      "options": [
+        { "id": "A", "text": "沉默是今晚的康桥。默默换个英雄", "score": { "CA": "退让" } },
+        { "id": "B", "text": "或缓慢或快速打出？并且开启输出模式", "score": { "CA": "直接" } },
+        { "id": "C", "text": "哈哈，开摆！", "score": { "CA": "冷处理" } }
+      ]
+    },
+    {
+      "order": 4,
+      "id": "DR-01",
+      "text": "做完一件让自己很满意的事，你会：",
+      "type": "direct",
+      "dimension": "DR",
+      "options": [
+        { "id": "A", "text": "不发朋友圈", "score": { "DR": "内" } },
+        { "id": "B", "text": "分享到朋友圈", "score": { "DR": "外" } },
+        { "id": "C", "text": "发朋友圈并且设置可见", "score": { "DR": "外/策略性" } }
+      ]
+    },
+    {
+      "order": 5,
+      "id": "PR-04",
+      "text": "「有人问你，你是什么样的人」，你会：",
+      "type": "direct",
+      "dimension": "PR",
+      "options": [
+        { "id": "A", "text": "回答", "score": { "PR": "真实" } },
+        { "id": "B", "text": "反问", "score": { "PR": "间接" } },
+        { "id": "C", "text": "不知道", "score": { "PR": "找不到" } }
+      ]
+    },
+    {
+      "order": 6,
+      "id": "SC-01",
+      "text": "「我知道我想要什么」",
+      "type": "direct",
+      "dimension": "SC",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "SC": "高" } },
+        { "id": "B", "text": "中立", "score": { "SC": "中" } },
+        { "id": "C", "text": "不认同", "score": { "SC": "极低" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 7,
+      "id": "PR-03",
+      "text": "今天天气这么好，穿不穿喜爱的花裤子呢？（都假设你喜爱了，就不要考虑这是不是花裤子！）",
+      "type": "abstract",
+      "dimension": "PR",
+      "options": [
+        { "id": "A", "text": "穿！而且要搭配最张扬的上衣", "score": { "PR": "真实" } },
+        { "id": "B", "text": "悄摸摸地穿，配一件大大的外套", "score": { "PR": "壳+核" } },
+        { "id": "C", "text": "最后穿了黑裤子", "score": { "PR": "压抑" } }
+      ]
+    },
+    {
+      "order": 8,
+      "id": "SC-02",
+      "text": "「我大致知道在什么情况下自己会怎么选择」",
+      "type": "direct",
+      "dimension": "SC",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "SC": "高" } },
+        { "id": "B", "text": "中立", "score": { "SC": "高" } },
+        { "id": "C", "text": "不认同", "score": { "SC": "极低" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 9,
+      "id": "DR-03",
+      "text": "「我要努力变强！」",
+      "type": "abstract",
+      "dimension": "DR",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "DR": "外" } },
+        { "id": "B", "text": "中立", "score": {} },
+        { "id": "C", "text": "不认同", "score": { "DR": "内" }, "disapproval": true },
+        { "id": "D", "text": "怎么还有D？", "score": { "DR": "内" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 10,
+      "id": "DR-02",
+      "text": "你的demo作品收到了赞扬和非常积极的反馈，你会：",
+      "type": "scenario",
+      "dimension": "DR",
+      "options": [
+        { "id": "A", "text": "欣然接受赞扬，奖励自己", "score": { "DR": "外" } },
+        { "id": "B", "text": "继续打磨demo", "score": { "DR": "内" } },
+        { "id": "C", "text": "趁热打铁分享自己的demo作品", "score": { "DR": "外/策略性" } }
+      ]
+    },
+    {
+      "order": 11,
+      "id": "SC-03",
+      "text": "「别人的评价会让我重新考虑我对自己的判断」",
+      "type": "direct",
+      "dimension": "SC",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "SC": "低" } },
+        { "id": "B", "text": "中立", "score": { "SC": "中" } },
+        { "id": "C", "text": "不认同", "score": { "SC": "高" } }
+      ]
+    },
+    {
+      "order": 12,
+      "id": "CA-02",
+      "text": "风和日丽，调休后迎来了美好的五一假期，在风也甜花也香的异国他乡你看到一家餐厅门口排着老长一列，于是你当机立断决定：别人排，我也排！终于轮到你，服务员把你领到室外，你目送着你后面的客人被领进了那个明明空着的室内位置，这时你：",
+      "type": "scenario",
+      "dimension": "CA",
+      "options": [
+        { "id": "A", "text": "边吃饭边想怎么写点评", "score": { "CA": "积累爆发" } },
+        { "id": "B", "text": "我的屁股今天只能坐在室内。立马去找服务员", "score": { "CA": "直接" } },
+        { "id": "C", "text": "算了，来都来了", "score": { "CA": "化解" } },
+        { "id": "D", "text": "换一家餐厅", "score": { "CA": "掀桌" } }
+      ]
+    },
+    {
+      "order": 13,
+      "id": "RC-01",
+      "text": "「被看见和被认可，对我来说很重要」",
+      "type": "direct",
+      "dimension": "RC",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "RC": "高" } },
+        { "id": "B", "text": "中立", "score": { "RC": "中" } },
+        { "id": "C", "text": "不认同", "score": { "RC": "低" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 14,
+      "id": "SC-04",
+      "text": "「用几个词描述自己，对我来说不难」",
+      "type": "direct",
+      "dimension": "SC",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "SC": "高" } },
+        { "id": "B", "text": "中立", "score": { "SC": "中" } },
+        { "id": "C", "text": "不认同", "score": { "SC": "极低" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 15,
+      "id": "SC-05",
+      "text": "宝宝，你：",
+      "type": "abstract",
+      "dimension": "SC",
+      "options": [
+        { "id": "A", "text": "是人", "score": { "SC": "高" } },
+        { "id": "B", "text": "不是人", "score": { "SC": "中" } },
+        { "id": "C", "text": "是你的宝宝", "score": { "SC": "中" } }
+      ]
+    },
+    {
+      "order": 16,
+      "id": "RC-02",
+      "text": "「我在一个群体里，如果没人注意到我，我会有点不对劲」",
+      "type": "direct",
+      "dimension": "RC",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "RC": "极高" } },
+        { "id": "B", "text": "中立", "score": { "RC": "高" } },
+        { "id": "C", "text": "不认同", "score": { "RC": "极低" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 17,
+      "id": "RC-03",
+      "text": "「我在意有没有被真正理解」",
+      "type": "direct",
+      "dimension": "RC",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "RC": "低" } },
+        { "id": "B", "text": "中立", "score": { "RC": "中" } },
+        { "id": "C", "text": "不认同", "score": { "RC": "极低" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 18,
+      "id": "EB-02",
+      "text": "朋友发来一句「v我50」，你会：",
+      "type": "scenario",
+      "dimension": "EB",
+      "options": [
+        { "id": "A", "text": "拒绝", "score": { "EB": "高边界" } },
+        { "id": "B", "text": "在A和C中选择B", "score": {} },
+        { "id": "C", "text": "一个红包发过去，50正正好好", "score": { "EB": "低边界" } }
+      ]
+    },
+    {
+      "order": 19,
+      "id": "PR-01",
+      "text": "聚会上，你抛出了一个真实的观点，空气突然安静，此时你下一步：",
+      "type": "scenario",
+      "dimension": "PR",
+      "options": [
+        { "id": "A", "text": "光速找补", "score": { "PR": "修改版真实" } },
+        { "id": "B", "text": "太好了大家都在认真听我说话，那我继续说", "score": { "PR": "表演/目的本身" } },
+        { "id": "C", "text": "假装无事发生", "score": { "PR": "真实" } }
+      ]
+    },
+    {
+      "order": 20,
+      "id": "CA-04",
+      "text": "某人做了让你不舒服的事，你想认真谈一谈，结果：",
+      "type": "scenario",
+      "dimension": "CA",
+      "options": [
+        { "id": "A", "text": "话到嘴边变成了另一句话", "score": { "CA": "换挡" } },
+        { "id": "B", "text": "「我是不是太敏感了？要不算了」", "score": { "CA": "回避" } },
+        { "id": "C", "text": "打开天窗说亮话", "score": { "CA": "直接" } }
+      ]
+    },
+    {
+      "order": 21,
+      "id": "RC-05",
+      "text": "朋友喊你去玩狼人杀，你跳了预言家，但没人相信你，你：",
+      "type": "scenario",
+      "dimension": "RC",
+      "options": [
+        { "id": "A", "text": "用爱打动所有人", "score": { "RC": "高" } },
+        { "id": "B", "text": "自爆", "score": { "RC": "极低" } },
+        { "id": "C", "text": "如果我不是预言家，那我名字倒过来写", "score": { "RC": "低" } }
+      ]
+    },
+    {
+      "order": 22,
+      "id": "PR-05",
+      "text": "你灵感迸发，才思如泉涌，大文豪附体，你觉得你想到的是：",
+      "type": "abstract",
+      "dimension": "PR",
+      "options": [
+        { "id": "A", "text": "复盘过去几年的职业征途，感慨万千。尽管面临了前所未有的挑战与磨砺，甚至多次跨越极限边缘，但正是这些「高压测试」塑造了今日更具韧性的自己。深感庆幸，我依然挺立在赛道上，并对未来的可能性保持渴望", "score": { "PR": "表演" } },
+        { "id": "B", "text": "我就在这里，不躲，不藏，不逃，稳稳地接住你，你问到问题的核心，你是太清醒了，我可以生成一张接住你的图片，那你想让我做吗？", "score": { "PR": "表演" } },
+        { "id": "C", "text": "这些年过得并不轻松，很多时候都在承受和消耗里度过。没什么感悟，没什么金句。就是纯粹地、有点荒诞地活着", "score": { "PR": "真实" } },
+        { "id": "Z", "text": "啊，你这不难为文盲吗？", "score": {} }
+      ]
+    },
+    {
+      "order": 23,
+      "id": "EB-01",
+      "text": "「我很容易被身边人的情绪影响」",
+      "type": "direct",
+      "dimension": "EB",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "EB": "低边界" } },
+        { "id": "B", "text": "中立", "score": { "EB": "中等边界" } },
+        { "id": "C", "text": "不认同", "score": { "EB": "高边界" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 24,
+      "id": "CA-05",
+      "text": "深夜你注意到微信群里一位同行发了一份有意思的文件，且话里话外传达着【此处有瓜】的气息。等你因好奇拜读完文件后，发现群里同行们已经出现争执。这时你会：",
+      "type": "scenario",
+      "dimension": "CA",
+      "options": [
+        { "id": "A", "text": "当围观群众默默吃瓜", "score": { "CA": "忽略" } },
+        { "id": "B", "text": "加入争执，帮想帮的那一边，说内心所想", "score": { "CA": "直接" } },
+        { "id": "C", "text": "和稀泥，不要让别人看笑话啦", "score": { "CA": "化解" } },
+        { "id": "D", "text": "把能言善道的朋友拉进群来「调节」气氛", "score": { "CA": "间接" } },
+        { "id": "E", "text": "都半夜了那当然是选择睡觉", "score": { "CA": "掀桌" } },
+        { "id": "F", "text": "你不关心争执，只是确实想到了什么，你发完想说的话后关掉了微信", "score": { "CA": "忽略" } },
+        { "id": "G", "text": "你不打算加入，只是回想起当年初入行时的经历，感慨万分", "score": { "CA": "冷处理" } }
+      ]
+    },
+    {
+      "order": 25,
+      "id": "RS-01",
+      "text": "「你的未读消息情况，大概是」",
+      "type": "direct",
+      "dimension": "RS",
+      "options": [
+        { "id": "A", "text": "秒回的人没有未读消息", "score": { "RS": "极高" } },
+        { "id": "B", "text": "看了但还没回", "score": { "RS": "中" } },
+        { "id": "C", "text": "已经不管了", "score": { "RS": "低" } }
+      ]
+    },
+    {
+      "order": 26,
+      "id": "RS-02",
+      "text": "crush发来一张在洗澡的可爱小柴，你没回。原因更可能是：",
+      "type": "scenario",
+      "dimension": "RS",
+      "options": [
+        { "id": "A", "text": "我，拒绝全世界！天晴前谁发都不回！", "score": { "RS": "极低" } },
+        { "id": "B", "text": "暂时不想理crush", "score": { "RS": "中" } },
+        { "id": "C", "text": "就不爱回消息，那咋的了", "score": { "RS": "低" } }
+      ]
+    },
+    {
+      "order": 27,
+      "id": "RC-04",
+      "text": "「当我的意见被接受，我希望是因为对方真的认可了我的想法，而不只是顺势而为」",
+      "type": "direct",
+      "dimension": "RC",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "RC": "高" } },
+        { "id": "B", "text": "中立", "score": { "RC": "中" } },
+        { "id": "C", "text": "不认同", "score": { "RC": "低" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 28,
+      "id": "EB-03",
+      "text": "「关系越亲密，我越需要保留一点只属于自己的空间」",
+      "type": "direct",
+      "dimension": "EB",
+      "options": [
+        { "id": "A", "text": "认同", "score": { "EB": "高边界" } },
+        { "id": "B", "text": "中立", "score": { "EB": "中等边界" }, "disapproval": true },
+        { "id": "C", "text": "不认同", "score": { "EB": "低边界" }, "disapproval": true }
+      ]
+    },
+    {
+      "order": 29,
+      "id": "EB-04",
+      "text": "一只可爱的、香香的、有牵引的、不流口水的大金毛跑过来撞了你一下，你会：",
+      "type": "abstract",
+      "dimension": "EB",
+      "fallbackTrigger": true,
+      "options": [
+        { "id": "A", "text": "撞回去", "score": { "EB": "低边界" } },
+        { "id": "B", "text": "狠狠地摸", "score": { "EB": "低边界" }, "usagiTrigger": true },
+        { "id": "C", "text": "问主人叫什么名字", "score": { "EB": "中等边界" } }
+      ]
+    }
+  ]
+}

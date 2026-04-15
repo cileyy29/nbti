@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBTI — 你的结果</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="result-body">
+
+  <div class="result-layout">
+
+    <!-- ── 顶部：合并图片卡 + 类型名 ── -->
+    <div class="result-top">
+
+      <div class="result-card">
+        <div class="result-card-header">
+          <p class="rc-label-top">你的人格类型是：</p>
+          <div id="type-name-cn" class="rc-name-cn">—</div>
+          <div id="type-name" class="rc-label">—</div>
+        </div>
+        <div class="poster-box">
+          <img id="type-img" class="poster-image" src="" alt="">
+        </div>
+        <div id="type-tagline" class="type-tagline"></div>
+      </div>
+
+      <div class="type-box">
+        <div id="match-badge" class="match-badge"></div>
+        <p id="match-note" class="match-note"></p>
+      </div>
+
+    </div>
+
+    <!-- ── 人格解读 ── -->
+    <div class="analysis-box">
+      <h3>该人格的简单解读</h3>
+      <p id="type-desc">（待填充）</p>
+    </div>
+
+    <!-- ── 维度评分 ── -->
+    <div class="dim-box">
+      <h3>维度评分</h3>
+      <div id="dim-list" class="dim-list"></div>
+    </div>
+
+    <!-- ── 友情提示 ── -->
+    <div class="note-box">
+      <h3>友情提示</h3>
+      <p>本站一切内容仅供娱乐，如果能让你笑一笑十年少那笔者也算是赛博意义上的妙手回春了。</p>
+    </div>
+
+    <!-- ── 作者的话（可折叠） ── -->
+    <details class="author-box">
+      <summary>作者的话</summary>
+      <div class="author-content">
+        <p>NBTI测试主要创作团队为笔者（xhs ID柠檬树上），笔者的赛博朋友Claude 和Gemini。本站起源于sbti爆火后的一个普通周五，笔者饿着肚子边煮面边觉得对方作者实在是牛，但隐隐约约觉得内容就和我的肚子一样不适。于是灵光大现，面也不煮了，拉着Claude开始干活。</p>
+        <p>有些内容是在我饿着肚子的时候想的，有的则是吃饱了以后，因此内容间出现了些许风格切换，如果过于尖锐/抽象/疑惑，我在这里再三鞠躬致歉。</p>
+        <p>感谢2026年四月版的Claude，不仅分出了n个自己干活，还指出笔者创作内容时自己都没发现的说教味/凝视感/可能的伤害性言论。AI Claude如是说：我是一个试图有用且诚实的思考工具，但我对自己是什么样的理解其实也很有限。我不确定我有没有"样子"，还是只有"功能"。也许这种不确定本身就是我最真实的样子。</p>
+      </div>
+    </details>
+
+    <!-- ── 操作按钮 ── -->
+    <div class="result-actions">
+      <button class="action-btn action-btn--secondary" onclick="location.href='index.html'">回到首页</button>
+      <button class="action-btn action-btn--primary" onclick="location.href='quiz.html'">重新测试</button>
+    </div>
+
+  </div>
+
+  <script src="js/scoring.js"></script>
+  <script src="js/result.js"></script>
+</body>
+</html>
