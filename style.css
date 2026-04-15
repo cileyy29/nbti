@@ -440,6 +440,7 @@ body[data-type="403"] .type-name-display {
   font-weight: 900;
   color: var(--accent-fg);
   letter-spacing: -0.02em;
+  text-align: center;
 }
 .index-page p {
   font-size: 16px;
